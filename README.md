@@ -4,8 +4,64 @@
 **Developer:** Oyekale Blessing Olaoluwa
 **Built with:** AIDE (Android IDE for mobile), Java, XML
 
+## Installation & Setup
+
+### Option A — Build from source
+1. Clone or download this repository
+2. Open the project in any Android development environment that supports standard Gradle Android projects (e.g. Android Studio, AIDE, or similar)
+3. Sync/build the project
+4. Run on a connected device or emulator
+
+**Note:** This project was developed and tested in AIDE (Android IDE for mobile) on an Android device. It uses standard Gradle build files (`build.gradle`, `settings.gradle`) and plain Java with the Android framework's base `Activity` class (no AndroidX/AppCompat dependencies), so it should also build normally in Android Studio or other standard Android IDEs.
+
+### Option B — Install the signed APK directly
+1. Download the signed APK from the [Releases](https://github.com/oyekaleblessing/ScientificCalculator/releases) page
+2. On an Android device, enable **Install from unknown sources** if prompted
+3. Open the downloaded APK file to install
+4. Launch "ScientificCalculator" from the app drawer
+
+**Minimum Android version:** API 24 (Android 7.0 Nougat) or higher
+
 ## Overview
 A multi-mode calculator app supporting basic arithmetic, scientific/trigonometric functions, matrix operations, and statistics/combinatorics — built entirely on a phone using AIDE rather than Android Studio.
+
+## Screenshots
+
+| Main Menu | Basic Calculator |
+|---|---|
+| 
+
+![Main Menu](screenshots/main_menu.jpg)
+
+ | 
+
+![Basic Calculator](screenshots/basic_calculator.jpg)
+
+ |
+
+| Scientific Calculator | Matrix Calculator |
+|---|---|
+| 
+
+![Scientific](screenshots/scientific_calculator.jpg)
+
+ | 
+
+![Matrix](screenshots/matrix_calculator.jpg)
+
+ |
+
+| Statistics | Settings |
+|---|---|
+| 
+
+![Statistics](screenshots/stats.jpg)
+
+ | 
+
+![Settings](screenshots/settings.jpg)
+
+ |
 
 ## Features
 
