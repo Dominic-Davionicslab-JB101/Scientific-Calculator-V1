@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<TextView
+			android:id="@+id/tvStatsTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Statistics &amp; Combinatorics"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:layout_marginBottom="16dp"/>
+
+		<!-- Permutations & Combinations section -->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Permutations &amp; Combinations"
+			android:textColor="#FF9500"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="6dp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginBottom="8dp">
+
+			<EditText android:id="@+id/etN" android:hint="n" android:inputType="number" android:textColor="#FFFFFF" android:textColorHint="#888888" android:background="#333333" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:layout_margin="4dp"/>
+			<EditText android:id="@+id/etR" android:hint="r" android:inputType="number" android:textColor="#FFFFFF" android:textColorHint="#888888" android:background="#333333" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:layout_margin="4dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginBottom="12dp">
+
+			<Button android:id="@+id/btnPermutation" android:text="nPr" android:textColor="#FFFFFF" android:textSize="15sp" android:background="@drawable/bg_button_operator" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:layout_margin="4dp"/>
+			<Button android:id="@+id/btnCombination" android:text="nCr" android:textColor="#FFFFFF" android:textSize="15sp" android:background="@drawable/bg_button_operator" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:layout_margin="4dp"/>
+			<Button android:id="@+id/btnFactorial" android:text="n!" android:textColor="#FFFFFF" android:textSize="15sp" android:background="@drawable/bg_button_operator" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:layout_margin="4dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tvCombResult"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/bg_display"
+			android:padding="16dp"
+			android:textColor="#00E676"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:minHeight="56dp"
+			android:layout_marginBottom="24dp"/>
+
+		<!-- Divider -->
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#333333"
+			android:layout_marginBottom="20dp"/>
+
+		<!-- Dataset Statistics section -->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Dataset Statistics"
+			android:textColor="#FF9500"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="6dp"/>
+
+		<EditText
+			android:id="@+id/etDataset"
+			android:hint="Enter numbers separated by commas, e.g. 4, 8, 6, 5, 3"
+			android:inputType="text"
+			android:textColor="#FFFFFF"
+			android:textColorHint="#888888"
+			android:background="#333333"
+			android:padding="12dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="12dp"/>
+
+		<Button
+			android:id="@+id/btnCalculateStats"
+			android:text="Calculate Statistics"
+			android:textColor="#FFFFFF"
+			android:textSize="15sp"
+			android:background="@drawable/bg_button_operator"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginBottom="12dp"/>
+
+		<LinearLayout
+			android:id="@+id/containerStatsResult"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@drawable/bg_display"
+			android:padding="16dp"
+			android:minHeight="60dp"/>
+
+	</LinearLayout>
+</ScrollView>

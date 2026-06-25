@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oyekaleblessing.scientificcalculator">
+	
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="ScientificCalculator"
+        android:theme="@android:style/Theme.Light"
+		android:icon="@drawable/ic_launcher2">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".basiccalculatoractivity"
+            android:exported="false"/>
+		
+		<activity android:name=".scientificactivity"
+			android:exported="false"/>
+		
+		<activity android:name=".matrixactivity"
+			android:exported="false"/>
+		
+		<activity android:name=".statsactivity" 
+			android:exported="false"/>
+		
+		<activity android:name=".settingsactivity" 
+			android:exported="false"/>
+
+    </application>
+
+</manifest>

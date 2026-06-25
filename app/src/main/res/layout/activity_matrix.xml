@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<TextView
+			android:id="@+id/tvMatrixTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Matrix Calculator"
+			android:textColor="#FFFFFF"
+			android:textSize="22sp"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:layout_marginBottom="12dp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginBottom="6dp">
+
+			<Button android:id="@+id/btnSize2" android:text="2×2" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"/>
+			<Button android:id="@+id/btnSize3" android:text="3×3" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"/>
+			<Button android:id="@+id/btnSize4" android:text="4×4" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tvSizeLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Matrix size: 2×2"
+			android:textColor="#888888"
+			android:textSize="14sp"
+			android:gravity="center"
+			android:layout_marginBottom="12dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Matrix A"
+			android:textColor="#FF9500"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="4dp"/>
+
+		<LinearLayout
+			android:id="@+id/containerMatrixA"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginBottom="16dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Matrix B"
+			android:textColor="#FF9500"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="4dp"/>
+
+		<LinearLayout
+			android:id="@+id/containerMatrixB"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginBottom="16dp"/>
+
+		<TextView
+			android:id="@+id/tvOperationsLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Operations"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="6dp"/>
+
+		<GridLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:columnCount="3"
+			android:rowCount="2"
+			android:layout_marginBottom="16dp">
+
+			<Button android:id="@+id/btnAdd" android:text="A + B" android:textColor="#FFFFFF" android:textSize="14sp" android:background="@drawable/bg_button_operator" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+			<Button android:id="@+id/btnSubtract" android:text="A − B" android:textColor="#FFFFFF" android:textSize="14sp" android:background="@drawable/bg_button_operator" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+			<Button android:id="@+id/btnMultiply" android:text="A × B" android:textColor="#FFFFFF" android:textSize="14sp" android:background="@drawable/bg_button_operator" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+
+			<Button android:id="@+id/btnDetA" android:text="det A" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+			<Button android:id="@+id/btnDetB" android:text="det B" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+			<Button android:id="@+id/btnClearMatrix" android:text="Clear" android:textColor="#000000" android:textSize="14sp" android:background="@drawable/bg_button_function" android:layout_margin="4dp" android:layout_columnWeight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+
+		</GridLayout>
+
+		<TextView
+			android:id="@+id/tvResultLabel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Result"
+			android:textColor="#FFFFFF"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_marginBottom="4dp"/>
+
+		<LinearLayout
+			android:id="@+id/containerResult"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@drawable/bg_display"
+			android:padding="16dp"
+			android:minHeight="60dp"/>
+
+	</LinearLayout>
+</ScrollView>
