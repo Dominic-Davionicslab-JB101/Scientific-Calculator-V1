@@ -1,4 +1,4 @@
-package com.oyekaleblessing.scientificcalculator;
+package com.AjibolaDavidChinedu.scientificcalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
