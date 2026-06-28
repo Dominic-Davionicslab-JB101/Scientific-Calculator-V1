@@ -1,7 +1,7 @@
 # Scientific Calculator – Android App
 
 **Course:** CSC 104 / SEN 104 & 214
-**Developer:** Oyekale Blessing Olaoluwa
+**Developer:** Ajibola David Chinedu
 **Built with:** AIDE (Android IDE for mobile), Java, XML
 
 ## Overview
